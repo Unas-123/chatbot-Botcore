@@ -1,6 +1,6 @@
-# BotCore - Unas AI Chatbot
+# BotCore - Unas AI Chatbot!
 
-![BotCore](https://user-images.githubusercontent.com/1011497/218335936-455a121d-aaa5-472e-8555-83e0618b76d0.png) <!-- This is a generic placeholder, replace with a real screenshot! -->
+![Screenshot 2025-07-01 171933](https://github.com/user-attachments/assets/4c715e67-f475-40b5-b97f-00dee0aeebb4)
 A feature-rich, modern web interface for the Google Gemini API, featuring the "Unas AI" persona. This project provides a fully functional chat application that persists conversation history and supports advanced features like image uploads, markdown rendering, and theme switching.
 **Tagline:** _AI at the Heart of Every Conversation._
 
