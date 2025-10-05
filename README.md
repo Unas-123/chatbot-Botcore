@@ -4,6 +4,9 @@ ai chatbot
 
 
 A modern, responsive web-based conversational AI chatbot powered by Google's Gemini API. Built with HTML, CSS, and JavaScript, it features a sleek dark/light theme toggle, chat history management, image upload for multimodal queries, and a customizable system prompt for engaging, witty responses. Designed for personal assistance with a focus on multilingual support (English, Roman Urdu, Roman Hindi) and adaptive tone (friendly by default, savage on swear words).
+    
+  Live Demo: https://botcore-ai-chatbot.netlify.app/
+
 
 🚀 Features
 
@@ -71,7 +74,6 @@ Toggle theme in sidebar footer.
 Edit systemInstruction in script.js for personality tweaks.
 
 
-LINK: botcore-ai-chatbot.netlify.app
 
 
 
