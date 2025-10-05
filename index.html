@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotCore - Unas AI</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Left Sidebar for History & Controls -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="brand-logo">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" stroke="url(#paint0_linear_101_2)" stroke-width="4"/>
+                    <path d="M20 50H35L42.5 35L57.5 65L65 50H80" stroke="var(--accent-glow)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs><linearGradient id="paint0_linear_101_2" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse"><stop stop-color="#8e44ad"/><stop offset="1" stop-color="#5e5ce6"/></linearGradient></defs>
+                </svg>
+                <h1>BotCore</h1>
+            </div>
+            <p class="brand-tagline">AI at the Heart of Every Conversation</p>
+            <button class="new-chat-btn" id="new-chat-btn">
+                <i class="fa-solid fa-plus"></i> New Chat
+            </button>
+        </div>
+        <ul class="history-list" id="history-list">
+            <!-- History items will be populated by JS -->
+        </ul>
+        <div class="sidebar-footer">
+            <div class="theme-switcher">
+                <i class="fa-solid fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="chat-container">
+        <header class="chat-header">
+            <h2 id="chat-title">New Conversation</h2>
+            <p>Your Personal Assistant: Unas AI</p>
+        </header>
+
+        <div class="chat-window" id="chat-window">
+            <!-- Messages will be populated by JS -->
+        </div>
+        
+        <button id="stop-generating-btn" class="stop-generating-btn" style="display: none;">
+            <i class="fa-solid fa-stop"></i> Stop Generating
+        </button>
+
+        <form class="chat-input-form" id="chat-form">
+            <div class="input-wrapper">
+                <div id="image-preview-container" style="display: none;">
+                    <img id="image-preview" src="" alt="Image preview"/>
+                    <button type="button" id="remove-image-btn">&times;</button>
+                </div>
+                <label for="image-upload-input" class="image-upload-label">
+                    <i class="fa-solid fa-paperclip"></i>
+                </label>
+                <input type="file" id="image-upload-input" accept="image/*" style="display: none;">
+                <textarea id="user-input" placeholder="Ask Unas AI anything, or attach an image..." rows="1" required></textarea>
+                <button type="submit" id="send-button" aria-label="Send Message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
