@@ -71,6 +71,9 @@ Toggle theme in sidebar footer.
 Edit systemInstruction in script.js for personality tweaks.
 
 
+LINK: botcore-ai-chatbot.netlify.app
+
+
 
 
 
